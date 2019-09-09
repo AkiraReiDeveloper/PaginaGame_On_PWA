@@ -26,6 +26,14 @@
   <meta name="codelab" content="your-first-pwa-v3">
   <link rel="stylesheet" type="text/css" href="/styles/inline.css">
   <link rel="stylesheet" type="text/css" href="/styles/headnav.css">
+  <link rel="stylesheet" type="text/css" href="/styles/estiloInterfaz.css">
+  <link rel="stylesheet" type="text/css" href="/styles/indexleft.css">
+  <link rel="stylesheet" type="text/css" href="/styles/navbar.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/JCarosellite.css" />
+  <script src="scripts/jquery-1.5.2.min.js" type="text/javascript"></script>
+	<script src="scripts/jcarousellite_1.0.1c5.js" type="text/javascript"></script>
+	<script src="scripts/JCarosellite.js" type="text/javascript"></script>
+  <script src="scripts/scripts.js" type="text/javascript"></script>
   <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
 
   <!-- CODELAB: Add link rel manifest -->
@@ -39,7 +47,7 @@
   <header class="header">
   		<nav class="headnav">
           <ul class="orientacionIzq">
-  				  <li><a href=""><i><img class="imgheadnavlog" onmouseout="this.src='images/icons/LOG-2.png';" onmouseover="this.src='images/icons/LOG.png';" src="images/icons/LOG-2.png" /></i></a></li>
+  				  <li><a href=""><i><img class="imgheadnavlog" onmouseout="this.src='images/icons/LOGo.png';" onmouseover="this.src='images/icons/LOGo-1.png';" src="images/icons/LOGo.png" /></i></a></li>
           </ul>
           <ul class="orientacionDer">
   					<li><a href="login.php" class="headlink">Iniciar sesión</a></li>
@@ -47,169 +55,225 @@
   					<li><a href="" ><i><img class="imgheadnav" onmouseout="this.src='images/icons/facebook-logo-1.png';" onmouseover="this.src='images/icons/facebook-logo-2.png';" src="images/icons/facebook-logo-1.png" /></i></a></li>
   					<li><a href="" ><i><img class="imgheadnav" onmouseout="this.src='images/icons/twitter-logo-1.png';" onmouseover="this.src='images/icons/twitter-logo2.png';" src="images/icons/twitter-logo-1.png" /></i></a></li>
   					<li><a href="https://www.youtube.com/channel/UCT7Z0aRzRxNusPpMG7ExIVA?view_as=subscriber" ><i><img class="imgheadnav" onmouseout="this.src='images/icons/youtube-logo-1.png';" onmouseover="this.src='images/icons/youtube-logo-2.png';" src="images/icons/youtube-logo-1.png" /></i></a></li>
-  				</ul>
   		</nav>
   </header>
 
-  <main class="main">
 
-    <button id="butAdd" class="fab" aria-label="Add">
-      <span class="icon add"></span>
-    </button>
+  <main class="main">
+    <div class="header" id="myheader">
+    			<nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+    				<ul class="nav">
+    					<li><a href="index.php"><i><img id="imgmenu" src="styles/imagenes/home-1.png" /></i> Inicio</a></li>
+    					<li><a href=""><img id="imgmenu" src="styles/imagenes/N64.png" /></i> Nintendo</a>
+    						<ul>
+    							<li><a href=""><img id="imgmenu" src="styles/imagenes/MANDONES.png" /></i>Nintendo</a></li>
+    							<li><a href=""><img id="imgmenu" src="styles/imagenes/MANDOSNES.png" /></i> Super Nintendo</a></li>
+    							<li><a href=""><img id="imgmenu" src="styles/imagenes/MANDON64.png" /></i> Nintendo 64</a></li>
+    							<li><a href="">Nintendo Gamecube</a></li>
+    							<li><a href="">Nintendo Portatiles</a>
+    								<ul>
+    									<li><a href="">GameBoy</a></li>
+    									<li><a href="">GameBoyColor</a></li>
+    									<li><a href="">GameBoyAdvance</a></li>
+    									<li><a href="">Nintendo DS</a></li>
+    								</ul>
+    							</li>
+    						</ul>
+    					</li>
+    					<li><a href=""><img id="imgmenu" src="styles/imagenes/PS1.png" /></i> PlayStation</a>
+    						<ul>
+    							<li><a href=""><img id="imgmenu" src="styles/imagenes/MANDOPS1.png" /></i> PlayStation 1</a></li>
+    							<li><a href="">PlayStation 2</a></li>
+    							<li><a href="">PlayStation 3</a></li>
+    							<li><a href=""><img id="imgmenu" src="styles/imagenes/MANDOPS4.png" /></i> PlayStation 4</a></li>
+    						</ul>
+    					</li>
+    					<li><a href=""><img id="imgmenu" src="styles/imagenes/XBOX.png" /></i> Xbox</a>
+
+    						<ul>
+    							<li><a href="">Xbox</a></li>
+    							<li><a href="">Xbox 360</a></li>
+    							<li><a href=""><img id="imgmenu" src="styles/imagenes/MANDOXONE.png" /></i> Xbox One</a></li>
+    						</ul>
+
+    					</li>
+    					<li><a href=""><img id="imgmenu" src="styles/imagenes/PC-logo.png" /></i> PC</a></li>
+    					<li><a href=""><img id="imgmenu" src="styles/imagenes/SEGA.png" /></i> Sega</a></li>
+    					<li><a href=""><img id="imgmenu" src="styles/imagenes/ATARI-logo.png" /></i> Atari</a></li>
+    					<li><a href=""><img id="imgmenu" src="styles/imagenes/NEOGEO.png" /></i> Neo-Geo</a></li>
+    					<li><a href=""><img id="imgmenu" src="styles/imagenes/MANDO-logo.png" /></i> Historia de las consolas</a></li>
+    					<li><div class="searchorder"><input class="search" type="text" name="search" placeholder="Search..."><a href=""><img id="imgmenu" src="styles/imagenes/search.png"></a></div></li>
+    				</ul>
+
+
+
+    			</nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+    </div>
 
     <div id="about" class="weather-card">
-      <b>Your First Progressive Web App Codelab</b><br>
-      Get started at <a href="https://g.co/codelabs/pwa">https://g.co/codelabs/pwa</a>.
-    </div>
-
-    <div id="weather-template" class="weather-card" hidden>
-      <div class="card-spinner">
-        <svg viewBox="0 0 32 32" width="32" height="32">
-          <circle cx="16" cy="16" r="14" fill="none"></circle>
-        </svg>
+      <div id="slidebox">
+      	<div class="next"></div>
+      	<div class="previous"></div>
+      	<div class="thumbs">
+      	<a href="#" onClick="" class="1 thumbActive">1</a>
+      	<a href="#" onClick="" class="2">2</a>
+      	<a href="#" onClick="" class="3 ">3</a>
+      	<a href="#" onClick="" class="4">4</a>
+      	</div>
+      	<ul>
+      	    <li><img src="images/icons/head3.jpg"></li>
+      	    <li><img src="images/icons/head1.jpg"></li>
+      	    <li><img src="images/icons/head2.jpg"></li>
+      	    <li><img src="images/icons/head4.jpg"></li>
+      	</ul>
       </div>
-      <button class="remove-city">&times;</button>
-      <div class="city-key" hidden></div>
-      <div class="card-last-updated" hidden></div>
-      <div class="location">&nbsp;</div>
-      <div class="date">&nbsp;</div>
-      <div class="description">&nbsp;</div>
-      <div class="current">
-        <div class="visual">
-          <div class="icon"></div>
-          <div class="temperature">
-            <span class="value"></span><span class="scale">°F</span>
-          </div>
+      
+      <div class="intro">
+      	<div class="imgFondoText">
+      	<p class="textoInicio">Esta pagina fue diseñada para tener al alcance todo tipo de emuladores para computadoras de escritorio y dispositivos moviles, yo no soy el desarrollador de estos emuladores recuerden que esto se lo debemos a la scene de desarrollo que trabaja dia con dia para poder llevar la experiencia de una consola de videojuegos a estos dispositivos.</p>
+      	</div>
+      </div>
+
+
+      <div class="row">
+
+      <div class="column">
+
+      <div class="post-outer-tamaño">
+      	<div class="post-title"><h2><a href="infoGamecubeEmulador.php">Nintendo Game Cube Emulator</a></h2></div>
+      		<div class="post-outer">
+      			<div><a href=""><img src="styles/imagenes/EMU1.jpg" class="block-image"></a>
+      			</div>
+      			<article>
+
+      				<span>Dolphin es un emulador para Nintendo GameCube y Wii que funciona en sistemas operativos Windows y GNU/Linux, tanto en sus versiones de 32 como de 64 bits (las versiones de 32 bits de Windows ya no son soportadas...</span><br><br><br>
+
+      			</article>
+
+      			<div class="postagsDown">
+      				<a class="read-more" href="" style="color:red;">Link no disponible</a>
+      			</div>
+      		</div>
+      </div>
+
+      <div class="post-outer-tamaño">
+      	<div class="post-title"><h2><a href="infoWiiUEmulador.php">Nintendo Wii U Emulator</a></h2></div>
+      		<div class="post-outer">
+      			<div><a href=""><img src="styles/imagenes/EMU2.jpg" class="block-image"></a>
+      			</div>
+      			<article>
+
+      				<span>Cemu es un emulador de Nintendo Wii U para Windows, de código cerrado. Su primer versión (v1.0.0) fue lanzada el 13 de octubre del 2015, y su última versión publicada hasta el momento es v1.15.1e...</span><br><br><br>
+
+      			</article>
+
+      			<div class="postagsDown">
+      				<a class="read-more" href="" style="color:red;">Link no disponible</a>
+      			</div>
+      		</div>
+      </div>
+
+      <div class="post-outer-tamaño">
+      	<div class="post-title"><h2><a href="infoSwitchEmulador.php">Nintendo Switch Emulator</a></h2></div>
+      		<div class="post-outer">
+      			<div><a href=""><img src="styles/imagenes/EMU3.jpg" class="block-image"></a>
+      			</div>
+      			<article>
+
+      				<span>Yuzu es un emulador de Nintendo Switch , desarrollado por yuzu Team de los mismos creadores de Citra. Se escribió en el lenguaje de programación C++. yuzu solo emula una parte del hardware de...</span><br><br><br>
+
+      			</article>
+
+      			<div class="postagsDown">
+      				<a class="read-more" href="" style="color:red;">Link no disponible</a>
+      			</div>
+      		</div>
+      </div>
+
+      <div class="post-outer-tamaño">
+      	<div class="post-title"><h2><a href="info3DSEmulador.php">Nintendo 3DS Emulator</a></h2></div>
+      		<div class="post-outer">
+      			<div><a href=""><img src="styles/imagenes/EMU4.jpg" class="block-image"></a>
+      			</div>
+      			<article>
+
+      				<span>Citra (literamente imagen) es el primer emulador de la consola portátil Nintendo 3DS, está programado en C++ y su código fuente fue publicado bajo licencia GPL...</span><br><br><br>
+
+      			</article>
+
+      			<div class="postagsDown">
+      				<a class="read-more" href="" style="color:red;">Link no disponible</a>
+      			</div>
+      		</div>
+      </div>
+
+      <div class="post-outer-tamaño">
+      	<div class="post-title"><h2><a href="">Xbox 360 Emulador</a></h2></div>
+      		<div class="post-outer">
+      			<div><a href=""><img src="styles/imagenes/EMU5.jpg" class="block-image"></a>
+      			</div>
+      			<article>
+
+      				<span>Xbox Xenia es un emulador de Xbox 360 para Windows a la fecha marzo de 2019 en fase de desarrollo, logrando ejecutar algunos juegos comerciales.</span><br><br><br>
+
+      			</article>
+
+      			<div class="postagsDown">
+      				<a class="read-more" href="" style="color:red;">Link no disponible</a>
+      			</div>
+      		</div>
+      </div>
+
+      <div class="post-outer-tamaño">
+      	<div class="post-title"><h2><a href="infoPS3Emulador.php">PlayStation 3 Emulador</a></h2></div>
+      		<div class="post-outer">
+      			<div><a href=""><img src="styles/imagenes/EMU6.jpg" class="block-image"></a>
+      			</div>
+      			<article>
+
+      				<span> RPCS3 es un emulador y depurador experimental de código abierto de Sony PlayStation 3 escrito en C ++ para Windows y Linux. El desarrollo comenzó a principios de 2011 por un pequeño equipo de programadores liderado por DH y Hykem...</span><br><br><br>
+
+      			</article>
+
+      			<div class="postagsDown">
+      				<a class="read-more" href="" style="color:red;">Link no disponible</a>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+
+      <div class="column2 ">
+        <div class="columna2">
+        	<div class="textoPopulares"><p >Emuladores Populares</p></div>
+        	<div class="fondo">
+        		<div class="divs">
+        			<div class="cube"><a href="index.php"><img id="imgright" src="styles/imagenes/yuzuright.png" /><p class="tamaright">Yuzu Patreon nueva actualizacion (2019-04-01)</p></a></div>
+        			<div class="cube"><a href="index.php"><img id="imgright" src="styles/imagenes/cemuright.jpg" /><p class="tamaright">Cemu 1.15.3b nuevas mejoras(2019-03-07)</p></a></div>
+        			<div class="cube"><a href="index.php"><img id="imgright" src="styles/imagenes/citraright.jpg" /><p class="tamaright">Citra Progress Report, pruba lo nuevo de este emulador (2018-04-2019)</p></a></div>
+        			<div class="cube"><a href="index.php"><img id="imgright" src="styles/imagenes/desmumerigth.jpg" /><p class="tamaright">DeSmuME v0.9.11 Binaries for Windows</p></a></div>
+        			<div class="cube"><a href="index.php"><img id="imgright" src="styles/imagenes/pcsx2right.png" /><p class="tamaright">PCSX2 1.4.0 disponible para android 08-01-2016</p></a></div>
+        			<div class="cube"><a href="index.php"><img id="imgright" src="styles/imagenes/gbaright.png" /><p class="tamaright"> Visual Boy Advance 1.8.0 vercion pro para pc </p></a></div>
+        	    </div>
+        	</div>
         </div>
-        <div class="description">
-          <div class="humidity">
-            <span class="label">Humidity:</span>
-            <span class="value"></span><span class="scale">%</span>
-          </div>
-          <div class="wind">
-            <span class="label">Wind:</span>
-            <span class="value"></span>
-            <span class="scale">mph</span>
-            <span class="direction"></span>°
-          </div>
-          <div class="sunrise">
-            <span class="label">Sunrise:</span>
-            <span class="value"></span>
-          </div>
-          <div class="sunset">
-              <span class="label">Sunset:</span>
-              <span class="value"></span>
+      </div>
+      </div>
+
+      <footer>
+        <div>
+          <div class="rowfooter">
+            <div class="footercolum1">
+              <p>Las consolas de videojuegos me han fascinado desde casi siempre y la primera consola que tuve fue una Súper Nintendo, eso fue cuando tenía 8 años y desde ese momento me gustaron los video juegos aunque debió pasar mucho tiempo antes de tener alguna otra consola... pero conocí el uso de los emuladores de consolas que a pesar que no eran perfectos podían emular una gran cantidad de juegos el primer emulador que conocí fue CuteBoy un emulador para celulares con Java J2ME y MIDP 2.0, este era un emulador de Game Boy Color y funcionaba correctamente...</p>
             </div>
+            <div class="footercolum2">
+              <a href="" ><i><img class="imgfooter" src='images/icons/LOG2.png'/></i></a>
+            </div>
+          </div>
+          <div class="footerbottom">Desarrollado por AkiraReiGamer ® 2019</div>
         </div>
-      </div>
-      <div class="future">
-        <div class="oneday">
-          <div class="date"></div>
-          <div class="icon"></div>
-          <div class="temp-high">
-            <span class="value"></span>°
-          </div>
-          <div class="temp-low">
-            <span class="value"></span>°
-          </div>
-        </div>
-        <div class="oneday">
-          <div class="date"></div>
-          <div class="icon"></div>
-          <div class="temp-high">
-            <span class="value"></span>°
-          </div>
-          <div class="temp-low">
-            <span class="value"></span>°
-          </div>
-        </div>
-        <div class="oneday">
-          <div class="date"></div>
-          <div class="icon"></div>
-          <div class="temp-high">
-            <span class="value"></span>°
-          </div>
-          <div class="temp-low">
-            <span class="value"></span>°
-          </div>
-        </div>
-        <div class="oneday">
-          <div class="date"></div>
-          <div class="icon"></div>
-          <div class="temp-high">
-            <span class="value"></span>°
-          </div>
-          <div class="temp-low">
-            <span class="value"></span>°
-          </div>
-        </div>
-        <div class="oneday">
-          <div class="date"></div>
-          <div class="icon"></div>
-          <div class="temp-high">
-            <span class="value"></span>°
-          </div>
-          <div class="temp-low">
-            <span class="value"></span>°
-          </div>
-        </div>
-        <div class="oneday">
-          <div class="date"></div>
-          <div class="icon"></div>
-          <div class="temp-high">
-            <span class="value"></span>°
-          </div>
-          <div class="temp-low">
-            <span class="value"></span>°
-          </div>
-        </div>
-        <div class="oneday">
-          <div class="date"></div>
-          <div class="icon"></div>
-          <div class="temp-high">
-            <span class="value"></span>°
-          </div>
-          <div class="temp-low">
-            <span class="value"></span>°
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
+      </footer>
 
-  <div id="addDialogContainer">
-    <div class="dialog">
-      <div class="dialog-title">Add new city</div>
-      <div class="dialog-body">
-        <select id="selectCityToAdd" aria-label="City to add">
-          <!--
-            Values are lat/lon values, use Google Maps to find and add
-            additional cities.
-          -->
-          <option value="28.6472799,76.8130727">Dehli, India</option>
-          <option value="-5.7759362,106.1174957">Jakarta, Indonesia</option>
-          <option value="51.5287718,-0.2416815">London, UK</option>
-          <option value="40.6976701,-74.2598666">New York, USA</option>
-          <option value="48.8589507,2.2770202">Paris, France</option>
-          <option value="-64.8251018,-63.496847">Port Lockroy, Antarctica</option>
-          <option value="37.757815,-122.5076401">San Francisco, USA</option>
-          <option value="31.2243085,120.9162955">Shanghai, China</option>
-          <option value="35.6735408,139.5703032">Tokyo, Japan</option>
-        </select>
       </div>
-      <div class="dialog-buttons">
-        <button id="butDialogCancel" class="button">Cancel</button>
-        <button id="butDialogAdd" class="button">Add</button>
-      </div>
-    </div>
-  </div>
-
-  <script src="/scripts/luxon-1.11.4.js"></script>
-  <script src="/scripts/app.js"></script>
-  <!-- CODELAB: Add the install script here -->
-  <script>
-    // CODELAB: Register service worker.
-  </script>
 
 </body>
 </html>

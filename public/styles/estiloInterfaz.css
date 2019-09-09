@@ -1,0 +1,308 @@
+
+.imgFondoText{
+
+    background-image: url("imagenes/fondo1.png");
+    width: 100%;
+    height: auto;
+}
+
+.intro{
+
+  width: 100%;
+  height: auto;
+}
+.textoInicio{
+
+  	text-align: justify;
+    padding:1%;
+    font-size: 20px;
+    color: #fff;
+    height: auto;
+
+}
+
+.textoRequisitos{
+
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+.link{
+
+    color: #1DA9F4;
+}
+
+
+footer{
+
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    padding:1%;
+    width: 100%;
+}
+
+.footercolum1{
+  width: 70%;
+  height: auto;
+  float: left;
+  text-align: justify;
+  padding: 2% ;
+  border-right: #fff solid 3px;
+
+}
+.footercolum2{
+  width: 20%;
+  height: auto;
+  float: left;
+}
+
+.imgfooter{
+
+  width: 150px;
+  height: 150px;
+  float: right;
+}
+.rowfooter {
+  display: table;
+  clear: both;
+  padding: 10px;
+  border-bottom: #fff solid 3px;
+  border-top: #fff solid 3px;
+}
+.footerbottom{
+
+  padding: 1%;
+  border-bottom: #fff solid 3px;
+}
+
+
+
+.imgheadiv{
+
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+
+}
+
+.imghead{
+  width: 100%;
+  height: auto;
+}
+
+  body {
+      font: normal normal 13px Nunito;
+      font-family:Arial, Helvetica, sans-serif;
+      background-repeat: no-repeat;
+      background-position: center;
+
+
+  }
+
+#outer-wrapper {
+    padding:2%;
+    max-width: 81.9%;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    background-color: #232323;
+
+}
+
+.post-outer{
+
+    background: #001D26;
+    color: white;
+    border-radius: 0px 0px 80px 10px;
+    background-image: url("imagenes/fondo1.png");
+    padding: 1%;
+    height: auto;
+    text-align: justify;
+    width: 80%;
+    float: left;
+
+}
+
+.block-image {
+    float: left;
+    width:40%;
+    height: 185px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.block-image:hover{
+    opacity: 0.8;
+}
+
+.column {
+  float: left;
+  width: 70%;
+}
+.column2 {
+  float: left;
+  width: 30%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row {
+  padding-top:10px;
+}
+
+.postags a{
+
+    text-decoration: none;
+    background-color: #DD4F42;
+    color: #fff;
+    padding:10px 12px;
+    border-radius: 5px;
+}
+
+.postagsDown{
+
+    width: 30%;
+    background-color: #001D26;
+    padding:10px;
+    border-radius: 5px;
+    border: 2px solid#fff;
+    float: left;
+}
+
+.postagsDown a{
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px
+
+}
+
+.postags a:hover {
+    background-color:#6F1A10;
+}
+
+.postagsDown a:hover {
+    background-color:#f2f2f2;
+    color:#001D26;
+    border: transparent;
+
+}
+
+.post-title{
+    background: #000;
+    padding: 1%;
+    width: 80%;
+    float: left;
+}
+
+.post-title a{
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.post-title a:hover{
+
+    color:#2ff;
+}
+
+.post-outer-tamaño{
+
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1000px) {
+
+    .column{
+        width:100%;
+        display: block;
+        margin: 20px;
+    }
+
+    .column2{
+        display: none;
+    }
+
+    .post-title{
+
+      font-size: 10px;
+      padding: 10px;
+      height: 50px;
+    }
+
+    .post-outer-tamaño{
+        width: 30%;
+        height: 50%;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    .textoInicio{
+      font-size: 15px;
+      padding: 1%;
+    }
+
+    .block-image {
+    float: left;
+    width: 98%;
+    height: 100px;
+    border-radius: 5px;
+    padding: 2px;
+    }
+
+    .orientacionDer{
+        font-size:15px;
+    }
+    .rowfooter {
+      display: none;
+    }
+
+    .postagsDown {
+        width: 110px;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    article{
+      display: none;
+    }
+
+    .weather-card{
+      margin: 70px 16px 16px 16px;
+      padding: 16px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+  .post-outer-tamaño{
+      width: 50%;
+      height: 50%;
+      float: left;
+      margin-bottom: 20px;
+  }
+
+  .postagsDown {
+      width: 140px;
+      height: auto;
+      margin-top: 10px;
+      margin-bottom: 30px;
+
+  }
+}
+
+
+}
