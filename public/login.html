@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/styles/loginStile.css">
+    <link rel="stylesheet" type="text/css" href="/styles/inline.css">
+    <link rel="stylesheet" type="text/css" href="/styles/estiloInterfaz.css">
+    <link rel="stylesheet" type="text/css" href="/styles/headnav.css">
+    <link rel="stylesheet" type="text/css" href="/styles/navbar.css" />
+  </head>
+  <body>
+
+    <header class="header">
+    		<nav class="headnav">
+            <ul class="orientacionIzq">
+    				  <li><a href=""><i><img class="imgheadnavlog" onmouseout="this.src='images/icons/menu.png';" onmouseover="this.src='images/icons/menu-1.png';" src="images/icons/menu.png" /></i></a></li>
+            </ul>
+            <ul class="orientacionDer">
+    					<li><a href="login.html" class="headlink">Iniciar sesión</a></li>
+    					<li><a href="registroUser.php" class="headlink">Registrarse</a></li>
+    					<li class="redessociales"><a href="" ><i><img class="imgheadnav" onmouseout="this.src='images/icons/facebook-logo-1.png';" onmouseover="this.src='images/icons/facebook-logo-2.png';" src="images/icons/facebook-logo-1.png" /></i></a></li>
+    					<li class="redessociales"><a href="" ><i><img class="imgheadnav" onmouseout="this.src='images/icons/twitter-logo-1.png';" onmouseover="this.src='images/icons/twitter-logo2.png';" src="images/icons/twitter-logo-1.png" /></i></a></li>
+    					<li class="redessociales"><a href="https://www.youtube.com/channel/UCT7Z0aRzRxNusPpMG7ExIVA?view_as=subscriber" ><i><img class="imgheadnav" onmouseout="this.src='images/icons/youtube-logo-1.png';" onmouseover="this.src='images/icons/youtube-logo-2.png';" src="images/icons/youtube-logo-1.png" /></i></a></li>
+    		</nav>
+    </header>
+
+    <main id="about" class="main">
+      <div class="weather-card login-box">
+          <img src="/images/icons/login-1.png" class="avatar" alt="Avatar Image">
+          <h1 class="txtSesion">Inicio de Sesión</h1>
+          <form action="" method="post">
+            <!-- USERNAME INPUT -->
+            <label for="username">Nombre de usuario</label>
+            <input type="text" name="email" placeholder="Ingresa Email" required>
+            <!-- PASSWORD INPUT -->
+            <label for="password">Contraseña</label>
+            <input type="password" name="contrasena" placeholder="Ingresa Contraseña">
+            <input type="submit" name="iniciarsesion"  value="Iniciar Sesión" required>
+            <a href="#">¿Olvidaste tu contraseña? </a><br>
+            <a href="registroUser.php">¿Aún no tienes una cuenta?</a>
+          </form>
+      </div>
+    </main>
+  </body>
+</html>
