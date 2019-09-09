@@ -302,6 +302,10 @@ footer{
       margin-bottom: 30px;
 
   }
+  .headnav{
+
+    display: none;
+  }
 }
 
 
